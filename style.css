@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: white;
+    font-size: 16px;
+ }
+.nav{
+    background-image: url(banner.webp);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 5% 3%;
+}
+.nav-head{
+    text-align: center;
+    line-height: 1.5;
+}
+.nav-head h1{
+    font-size: 1.8rem;
+}
+.nav-bar{
+    display: flex;
+    gap: 50px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.nav-content{
+    padding-top: 20%;
+}
+.nav-content h3{
+    font-size: 3rem;
+}
+.packages-img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.packages{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 5% 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.packages-content{
+    width: 100%;
+}
+.packages-content h1{
+    font-size: 2rem;
+}
+.packages-content p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+    background-color: black;
+    color: white;
+}
+footer h1{
+font-size: 1rem;
+}
+footer p{
+font-size: 1rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:992px){
+    .nav{
+        padding: 10% 3%;
+    }
+    .packages{
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 94%;
+        margin: 8% 3%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav-content h3{
+        font-size: 1.8rem;
+    }
+    .packages{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:576px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:426px){
+    .nav-bar{
+        gap: 25px;
+    }
+    .nav-bar a{
+        font-size: 0.9rem;
+    }
+    .nav-content h3{
+        font-size: 1.4rem;
+    }
+    .packages{
+        margin-top: 14%;
+    }
+}
